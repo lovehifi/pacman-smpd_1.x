@@ -19,17 +19,30 @@
 > 
 ####
 ####
-#2./ **Setup**
+#2./ **Setup and Config**
 > wget http://mirror.archlinuxarm.org/aarch64/core/pacman-5.2.2-2-aarch64.pkg.tar.xz
 > 
 > tar -xf pacman-5.2.2-2-aarch64.pkg.tar.xz --overwrite -C /
 > 
-> wget
+> wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/varlibpacman.tar.gz
 > 
+> tar -xf varlibpacman.tar.gz --overwrite -C /
+>
+> wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/pacmand.tar.gz
+>
+> tar -xf pacmand.tar.gz --overwrite -C /
+>
+> wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/pacmanconf.tar.gz
+>
+> tar -xf pacmanconf.tar.gz --overwrite -C /
+>
+> pacman -Syy
+>
+> pacman -Syu
 ####
 ####
 #3./ **Test**
-> ...
+> pacman -h
 ####
 ####
 
