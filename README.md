@@ -39,6 +39,10 @@
 > pacman -Syy
 >
 > pacman -Syu --ignore filesystem,bash
+> 
+> pacman -S bash
+>
+> pacman -Su
 ####
 ####
 #3./ **Test**
