@@ -36,13 +36,7 @@
 >
 > tar -xf pacmanconf.tar.gz --overwrite -C /
 >
-> pacman -Syy
->
-> pacman -Syu --ignore filesystem,bash
-> 
-> pacman -S bash
->
-> pacman -Su
+
 ####
 ####
 #3./ **Test**
@@ -50,4 +44,5 @@
 ####
 ####
 
+Just temp backup: pacman -Syy >> pacman -Syu --ignore filesystem,bash >> pacman -S bash >> pacman -Su
 
