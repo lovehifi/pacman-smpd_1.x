@@ -43,6 +43,7 @@
 ####
 #3./ **Test**
 > pacman -h
+> pacman -h
 ####
 ####
 
