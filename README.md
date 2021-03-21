@@ -10,6 +10,8 @@
 > 
 > tar -xf pacman-5.2.2.tar.gz
 > 
+> cd /root/pacman-5.2.2
+>
 > ./configure --prefix=/usr --libdir=/lib
 > 
 > make
