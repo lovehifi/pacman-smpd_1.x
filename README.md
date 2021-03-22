@@ -5,7 +5,7 @@
 
 ###### Step by Step
 
-#1./ **Download and compile pacman**
+#1./ **Download and compile Pacman**
 > wget https://sources.archlinux.org/other/pacman/pacman-5.2.2.tar.gz
 > 
 > tar -xf pacman-5.2.2.tar.gz
