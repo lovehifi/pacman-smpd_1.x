@@ -34,7 +34,9 @@
 >
 > tar -xf /root/pacmanconf.tar.gz --overwrite -C /
 >
-
+> pacman -Syy
+>
+> pacman -Syu
 ####
 ####
 #3./ **Test**
