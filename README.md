@@ -26,10 +26,6 @@
 > 
 > tar -xf pacman-5.2.2-2-aarch64.pkg.tar.xz --overwrite -C /
 > 
-> wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/varlibpacman.tar.gz
-> 
-> tar -xf varlibpacman.tar.gz --overwrite -C /
->
 > wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/pacmand.tar.gz
 >
 > tar -xf /root/pacmand.tar.gz --overwrite -C /
