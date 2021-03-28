@@ -32,11 +32,11 @@
 >
 > wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/pacmand.tar.gz
 >
-> tar -xf pacmand.tar.gz --overwrite -C /
+> tar -xf /root/pacmand.tar.gz --overwrite -C /
 >
 > wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/pacmanconf.tar.gz
 >
-> tar -xf pacmanconf.tar.gz --overwrite -C /
+> tar -xf /root/pacmanconf.tar.gz --overwrite -C /
 >
 
 ####
