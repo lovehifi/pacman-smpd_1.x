@@ -24,8 +24,7 @@ echo ldconfig >>/opt/bootlocal.sh
 echo "Rebooting..."
 sleep 3
 
-# wget -O - https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/m
-ain/te.sh | sh
+# wget -O - https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/te.sh | sh
 pcp br
 
 
