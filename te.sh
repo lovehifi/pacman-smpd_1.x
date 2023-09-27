@@ -14,9 +14,9 @@ tar -xzvf Tidal-Connect-Armv7.tar.gz --overwrite -C /
 cd /mnt/$TARGET/optional
 echo "Download"
 wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/ifiLib1.tcz
-wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/ifiLib2.tgz
-wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/ifiLib3.tgz
-wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/ifiLib4.tgz
+wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/ifiLib2.tcz
+wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/ifiLib3.tcz
+wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/ifiLib4.tcz
 
 
 sed -i '/ldconfig/d' /opt/bootlocal.sh
