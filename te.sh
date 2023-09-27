@@ -1,22 +1,29 @@
-#!/bin/bash
+#!/bin/busybox ash
 
-if ls /root/*.tgz 1> /dev/null 2>&1; then
-  for file in /root/*.tgz; do
-    rm -f "$file"
-  done
-fi
+. /etc/init.d/tc-functions
+. /var/www/cgi-bin/pcp-functions
 
-if ls /root/*.tar.gz 1> /dev/null 2>&1; then
-  for file in /root/*.tar.gz; do
-    rm -f "$file"
-  done
-fi
-
-echo "Download"
+useBusybox
+TARGET=`cat /etc/sysconfig/backup_device`
+tce-load -i ca-certificates.tcz
+tce-load -wi avahi.tcz libavahi.tcz ipv6-netfilter-5.15.35-pcpCore-v7.tcz
+cd ~
 wget https://raw.githubusercontent.com/lovehifi/tidalconnect-picore/main/Tidal-Connect-Armv7.tar.gz
+tar -xzvf Tidal-Connect-Armv7.tar.gz --overwrite -C /
+
+cd /mnt/$TARGET/optional
+echo "Download"
 wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/ifiLib1.tcz
 wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/ifiLib2.tgz
 wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/ifiLib3.tgz
 wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/ifiLib4.tgz
 
-echo "Install"
+
+sed -i '/ldconfig/d' /opt/bootlocal.sh
+echo ldconfig >>/opt/bootlocal.sh
+echo "Rebooting..."
+sleep 3
+pcp br
+
+
+
