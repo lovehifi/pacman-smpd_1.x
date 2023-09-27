@@ -18,7 +18,7 @@ wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/ifiLib2.tcz
 wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/ifiLib3.tcz
 wget https://raw.githubusercontent.com/lovehifi/pacman-smpd_1.x/main/ifiLib4.tcz
 
-
+rm /home/tc/Tidal-Connect-Armv7.tar.gz
 sed -i '/ldconfig/d' /opt/bootlocal.sh
 echo ldconfig >>/opt/bootlocal.sh
 echo "Rebooting..."
