@@ -5,7 +5,7 @@
 
 useBusybox
 TARGET=`cat /etc/sysconfig/backup_device`
-tce-load -i ca-certificates.tcz
+#tce-load -i ca-certificates.tcz
 tce-load -wi avahi.tcz libavahi.tcz ipv6-netfilter-5.15.35-pcpCore-v7.tcz
 cd ~
 wget https://raw.githubusercontent.com/lovehifi/tidalconnect-picore/main/Tidal-Connect-Armv7.tar.gz
